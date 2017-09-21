@@ -1,0 +1,17 @@
+.fcarousel{position:relative;border:5px solid #ccc;width: 224px;height: 288px;overflow: hidden;}
+.fcarousel ul{position:absolute;left:0;top:0;overflow: hidden;}
+.fcarousel ul.horizontal li{float:left;}
+.fade{opacity: 1;}
+.fcarousel ul.fade li{position: absolute;top:0;left:0}
+.fcarousel img{display:block;}
+.fcarousel .page{position:absolute;;left:50%;bottom:10px;transform: translateX(-50%);}
+.fcarousel .page span{display:inline-block;width: 6px;height: 6px;overflow: hidden;background: #ccc;border-radius: 50%;margin:0 3px;text-indent:-1000px;}
+.fcarousel .page span.active{background: red;}
+
+.fcarousel > span{position: absolute;top:50%;left:10px;transform:translate(0,-50%);width:30px;height:60px;line-height:60px;text-align:center;background-color: rgba(0,0,0,.3);color:#fff;}
+.fcarousel .btn-next{left:auto;right:10px;}
+
+/*------小图-----*/
+.fcarousel .small{position:absolute;bottom:0;left:50%;transform:translate(-50%,0);height:40px;overflow: hidden;}
+.fcarousel .small li{float:left;}
+.fcarousel .small img{width:40px;}
