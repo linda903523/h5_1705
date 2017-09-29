@@ -1,0 +1,78 @@
+/* ---------------右边固定栏-------------- */
+.fixright{
+    position:fixed;height: 100%;background:#fff;z-index:40;width:36px;right:0;top:0;border-left: 1px solid #ddd;box-shadow: -3px 0 17px rgba(0,0,0,0.15);    
+    .leve1,.leve2,.leve3,.leve4,.leve5{position:relative;}
+    i{position:absolute;left:7px;top:7px;width: 22px;height: 22px;background:url(../img/fix3.png) no-repeat 0 0;z-index:60;}
+    .leve1{height: 187px;}
+    .leve1_1{
+        position:absolute;top:110px;left:0;height: 36px;width: 36px;
+        &:hover{
+            background:#ff5c00;
+            i{background-position:-22px 0;}
+        }
+    }
+    .leve1_2{
+        width: 289px;height: 162px;position:absolute;right:56px;top:110px;z-index:50;background:#fff;text-align:center;display:none;
+        span{position:absolute;right:15px;top:12px;width: 15px;height:15px;}    
+        img{margin:30px 0 15px 106px;}
+        p{
+            font-size:12px;color:#525261;
+            a{
+                color:$color;display:inline-block;
+                &:first-child{margin:0 22px 0 7px;}
+                &:last-child{padding-left:20px;border-left:1px solid #525261;}
+            }  
+        }
+        i{width:5px;height:36px;background:url(../img/sanjiao.png) no-repeat;right:-5px;left:auto;top:0;}
+    }
+    .leve2_1{
+        position:relative;padding:0 7px;
+        p{font-size:11px;color:#666;text-align:center;border-top:1px solid #eae5e1;border-bottom:1px solid #eae5e1;height: 91px;padding-top:49px;}
+        i{background-position:0 -22px;height: 28px;top:14px;}
+        &:hover{
+            background:#ff5c00;
+            p{color:#fff;border-color:#ff5c00;}
+            i{background-position:-22px -22px;}
+        }
+    }  
+    .leve2_2{
+        position:absolute;top:178px;left:0;height:36px;width:36px;
+        i{background-position:0 -50px;}
+        &:hover{
+            background:#ff5c00;
+            i{background-position:-22px -50px;}
+        }
+    } 
+    .leve3_1{
+        i{background-position:0 -72px;height: 28px;}
+        &:hover{
+           i{background-position:-22px -72px;} 
+        }
+    }
+    .leve4{
+        height:85px;margin-top:200px;background:#ff5c00;
+        div{
+            position:relative;font-size:12px;line-height: 18px;color:#fff;width:26px;text-align:center;padding:43px 5px 0 5px;
+            i{background-position:-22px -100px;height: 28px;}
+        }
+        p{
+            font-size:12px;color:#525261;position:absolute;top:0px;left:-100px;z-index:50;height: 42px;width:80px;line-height: 42px;text-align:center;background:#fff;display:none;
+            i{width:5px;height:36px;background:url(../img/sanjiao.png) no-repeat;right:-5px;left:auto;top:0;}
+        }
+    }
+    .leve5{
+        height:60px;margin-top:100px;
+        div{position:relative;height:36px;}
+        i{background-position:0 -128px;top:6px;}
+        p{
+            font-size:12px;color:#525261;position:absolute;top:0px;left:-100px;z-index:50;height: 42px;width:80px;line-height: 42px;text-align:center;background:#fff;display:none;
+            i{width:5px;height:36px;background:url(../img/sanjiao.png) no-repeat;right:-5px;left:auto;top:0;} 
+        }
+        &:hover{
+            div{
+                background:#ff5c00;
+                i{background-position:-22px -128px;}
+            }
+        } 
+    }
+}

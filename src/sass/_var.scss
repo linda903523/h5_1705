@@ -1,0 +1,29 @@
+/*
+    存放全局变量
+ */
+$color:#ff5c00 !default;
+/*==========样式重置===========*/
+body,html{width: 100%;background: #f4f2f4;}
+body,dl,dd,h1,h2,h3,h4,h5,h6,p,form{margin:0;}
+ol,ul{margin:0; padding:0;}
+ul,ol,li{list-style:none;}
+img{display:block;border:0 none;}
+input{outline:none;margin: 0;}
+body{font-family:"微软雅黑";height: 100%;}
+a{text-decoration:none;display:block;}
+/*左浮动*/
+.fl{float:left;}
+/*右浮动*/
+.fr{float:right;}
+/* 清除浮动 */
+.clearfix::after{
+    display:block;
+    content:"";
+    height: 0;
+    clear:both;
+    overflow:hidden;
+    visibility:hidden;
+    zoom:1;
+}
+.container{width: 1090px;margin:0 auto;}
+.outer{background: url(../img/outer.png) top no-repeat;}

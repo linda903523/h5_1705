@@ -1,0 +1,35 @@
+{
+  "name": "fuling",
+  "version": "1.0.0",
+  "description": "个人项目",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linda903523/h5_1705.git"
+  },
+  "keywords": [
+    "personal",
+    "project"
+  ],
+  "author": "fuling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linda903523/h5_1705/issues"
+  },
+  "homepage": "https://github.com/linda903523/h5_1705#readme"
+}
