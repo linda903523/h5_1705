@@ -129,7 +129,7 @@ body, html { background: #ececec; }
 
 .main .content #code, .main .content #code1 { width: 100px; height: 23px; }
 
-.main .content span { display: inline-block; width: 80px; height: 29px; line-height: 29px; border: 1px solid #d3d3d3; margin-left: 20px; vertical-align: -11px; font-size: 14px; }
+.main .content span { display: inline-block; width: 80px; height: 27px; line-height: 27px; border: 1px solid #d3d3d3; margin-left: 20px; text-align:center; font-size: 14px; }
 
 .main .content #code1 + span { width: 98px; padding: 0 5px; vertical-align: 0; color: #ff7800; background: #fffaec; border-color: #ffda71; cursor: pointer; }
 

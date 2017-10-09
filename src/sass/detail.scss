@@ -84,7 +84,10 @@ body,html{background: #fbfbfb;}
         }
         .bottom{
             padding-left:43px;            
-            span{padding:0 8px;border:1px solid #b8b7bd;margin:0 6px 5px 0;float:right;color:#000;}
+            span{
+                padding:0 8px;border:1px solid #b8b7bd;margin:0 6px 5px 0;float:right;color:#000;cursor:pointer;
+            }
+            .active{border-color:$color;}
             p{
                 font-size:12px;color:#888;margin-bottom:22px;
                 &:nth-child(4){padding-right:30px;}
@@ -109,7 +112,7 @@ body,html{background: #fbfbfb;}
             }
         }
         .pop{
-            position:fixed;left:50%;bottom:276px;transform:translateX(-50%);width: 418px;height: 153px;border:1px solid $color;background:#fff;z-index:40;
+            position:fixed;left:50%;bottom:276px;transform:translateX(-50%);width: 418px;height: 153px;border:1px solid $color;background:#fff;z-index:40;display:none;
             h4{
                 background:$color;color:#fff;font-size:14px;height:40px;line-height:40px;padding-left:12px;
                 i{width:13px;height:13px;background: url(../img/s9.png) no-repeat 0 0;top:18px;right:6px;left:auto;cursor:pointer;}
@@ -153,6 +156,7 @@ body,html{background: #fbfbfb;}
                 left:auto;right:0;
                 i{background-position: -39px -2px;}
             }
+            img.active{border-color:$color;}
         }
         .fr{
             width:200px;
@@ -179,15 +183,20 @@ body,html{background: #fbfbfb;}
 #data{
     width: 392px;position:relative;
     .big img{width: 320px;height: 320px;margin:35px 36px;}
+    .xzoom{position:relative;}
+        .xzoom .minzoom{position: absolute;width:30px;height:30px;border:1px solid #fc0;background-color:#ff0;background-color: rgba(255,255,0,.3);filter:alpha(Opacity=30);}
+        .xzoom-big{position: absolute;width:200px;height:300px;overflow:hidden;}
+        .xzoom-big img{position: absolute;left:0;right:0;}
     .box{position:relative;overflow:hidden;width:328px;height:62px;margin-left:46px;}
     .small{
         height: 62px;position:absolute;left:0px;top:0px;
-        img{float:left;border:1px solid #ccc;margin-right:20px;}
+        img{float:left;border:1px solid #ccc;margin-right:20px;width: 60px;}
     } 
     span{
         position:absolute;left:10px;bottom:0;width:20px;height:62px;background:$color;line-height:62px;text-align:center;cursor:pointer;
         &:last-child{left:372px;}
     }
+    img.active{border-color:$color;}
 }
 #detail{
     border:1px solid #eaeaea;border-bottom:0 none;background:#fff;margin-bottom:30px;

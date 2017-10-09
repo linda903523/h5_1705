@@ -40,27 +40,27 @@ require(['jquery','fcarousel'],function($,fcarousel){
     $(window).scroll(function(){
         //导航吸顶
         if($(this).scrollTop()>400){
-            $('.navfix').css({display:'block'});
+            $('.navfix').show();
         }else{
-            $('.navfix').css({display:'none'});
+            $('.navfix').hide();
         } 
 
         //左边侧栏固定
         if($(this).scrollTop()>600){
-            $('.fixleft').css({display:'block'});
+            $('.fixleft').show();
         }else{
-            $('.fixleft').css({display:'none'});
+            $('.fixleft').hide();
         }
     });
 
     $('.fixleft').on('click','span',function(){
-        $(this).css({display:'none'}).next().html('');
+        $(this).hide().next().html('');
     });
 
     //右边侧栏动画
     setTimeout($('.leve').each(function(idx,ele){console.log(666)
         $(this).hover(()=>{
-            $(this).find('.leve1_2').css({display:'block'}).animate({left:36});
+            $(this).find('.leve1_2').show().animate({left:36});
         },()=>{
             $('.leve1_2').css({display:'none',left:56});
         })

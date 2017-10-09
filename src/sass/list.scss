@@ -59,9 +59,11 @@ body,html{background: #afe6e3;}
     .container{background: #fff;height: 100%;}
     .main1{
         padding:15px 17px 0 30px;height: 64px;border-bottom:2px solid $color;
-        h2{font-size:12px;height: 20px;line-height: 20px;}
-        span{display:inline-block;font-size:11px;font-weight:normal;color:#8f8d8a;background:#fffedf;width: 243px;border:1px solid #f4f2ce;margin-left:4px;}
-        em{display:inline-block;color:#fff;width:24px;background:#7cc904;margin:2px 3px;padding:0 5px;border:1px solid #78b01e;border-radius: 2px;font-style: normal;}
+        h2{
+            font-size:12px;height: 20px;line-height: 20px;
+            span{display:inline-block;font-size:11px;font-weight:normal;color:#8f8d8a;background:#fffedf;width: 243px;border:1px solid #f4f2ce;margin-left:4px;}
+            em{display:inline-block;color:#fff;width:24px;background:#7cc904;margin:2px 3px;padding:0 5px;border:1px solid #78b01e;border-radius: 2px;font-style: normal;}
+        }
         .clearfix{margin-top:9px;}
         p{
             position:relative;font-size:12px;color:#777;height: 20px;line-height: 20px;padding-left:30px;
