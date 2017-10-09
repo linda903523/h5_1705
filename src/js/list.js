@@ -45,4 +45,4 @@ require(['jquery'],function($){
         //写入页面
         $time.html('剩余时间：' + day + ' 天 ' + hour + ' 时 ' + min + ' 分 ' + sec + '秒');
     },1000);
-})
+});
